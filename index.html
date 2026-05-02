@@ -11,25 +11,307 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="container">
-            
+          <h1 data-aos="fade-down-right" data-aos-duration="2000">CARENT</h1>
+          <ul data-aos="fade-down-right" data-aos-duration="2000">
+            <li>Home</li>
+            <li>About</li>
+            <li>Booking</li>
+            <li>Cars</li>
+            <li>Contacts</li>
+          </ul>
+          <button data-aos="fade-down-left" class="dark">Dark mode</button>
         </div>
       </nav>
       <div class="hero">
-        <div class="container"></div>
+        <div class="container">
+          <ul data-aos="fade-down-right" data-aos-duration="2000">
+            <li>|</li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-react"></i></li>
+            <li><i class="fa-brands fa-telegram"></i></li>
+            <li>|</li>
+          </ul>
+          <div data-aos="zoom-in" data-aos-duration="2000" class="info">
+            <h1>Enjoy your life with our comfortable cars.</h1>
+            <h3>
+              Carent, is ready to serve the best experience in car rental.
+            </h3>
+            <button>Explore Now</button>
+          </div>
+          <div
+            data-aos="zoom-in-left"
+            data-aos-duration="2000"
+            class="hero_img"
+          >
+            <img src="./imgs/hero img.jpg" alt="" />
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="intro">
-        <div class="container"></div>
+        <div class="container">
+          <div data-aos="fade-down" data-aos-duration="2000" class="title">
+            <h1>About Us</h1>
+          </div>
+          <div class="intro_box">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="intro_card1"
+            >
+              <img src="./imgs/intro img1.jpg" alt="" />
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="intro_card2"
+            >
+              <p>
+                We are a specialized team committed to providing reliable car
+                rental services. One of the advantages of renting a car from us
+                is offering competitive and transparent prices. By providing
+                services such as comprehensive insurance ......
+              </p>
+              <h3>Read More</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="book_now">
+        <div class="container">
+          <div data-aos="fade-down" data-aos-duration="2000" class="title">
+            <h1>Book now</h1>
+          </div>
+          <div class="book_box">
+            <div
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              class="book_card"
+            >
+              <p><i class="fa-solid fa-location"></i> Pickup Location</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              class="book_card"
+            >
+              <p><i class="fa-solid fa-location"></i> Pickup Location</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              class="book_card"
+            >
+              <p><i class="fa-solid fa-location"></i> Pickup Location</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              class="book_card"
+            >
+              <p><i class="fa-solid fa-location"></i> Pickup Location</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              class="book_card"
+            >
+              <p><i class="fa-solid fa-location"></i> Pickup Location</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div
+              data-aos="flip-left"
+              data-aos-duration="1000"
+              class="book_card"
+            >
+              <p><i class="fa-solid fa-location"></i> Pickup Location</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <button data-aos="flip-left" data-aos-duration="1000">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="third">
+        <div class="container">
+          <div data-aos="fade-down" data-aos-duration="2000" class="title">
+            <h1>Our Featured Cars</h1>
+          </div>
+          <div class="third_box">
+            <div data-aos="fade-right" class="third_card">
+              <img src="./imgs/third img1.jpg" alt="" />
+              <h3>Jeep XD</h3>
+              <ul>
+                <li><i class="fa fa-user-circle" aria-hidden="true"></i> 5</li>
+                <li><i class="fas fa-gas-pump"></i>Gasoline</li>
+                <li><i class="fa-solid fa-truck"></i>SUV</li>
+              </ul>
+              <div class="narx">
+                <ul class="narx_link">
+                  <li>Daily rate from</li>
+                  <li>$200</li>
+                </ul>
+                <button>Book Now</button>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="third_card">
+              <img src="./imgs/third img2.jpg" alt="" />
+              <h3>Jeep XD</h3>
+              <ul>
+                <li><i class="fa fa-user-circle" aria-hidden="true"></i> 5</li>
+                <li><i class="fas fa-gas-pump"></i>Gasoline</li>
+                <li><i class="fa-solid fa-truck"></i>SUV</li>
+              </ul>
+              <div class="narx">
+                <ul class="narx_link">
+                  <li>Daily rate from</li>
+                  <li>$200</li>
+                </ul>
+                <button>Book Now</button>
+              </div>
+            </div>
+            <div data-aos="fade-left" class="third_card">
+              <img src="./imgs/third img3.jpg" alt="" />
+              <h3>Jeep XD</h3>
+              <ul>
+                <li><i class="fa fa-user-circle" aria-hidden="true"></i> 5</li>
+                <li><i class="fas fa-gas-pump"></i>Gasoline</li>
+                <li><i class="fa-solid fa-truck"></i>SUV</li>
+              </ul>
+              <div class="narx">
+                <ul class="narx_link">
+                  <li>Daily rate from</li>
+                  <li>$200</li>
+                </ul>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fourth">
+        <div class="container">
+          <div data-aos="fade-down" data-aos-duration="2000" class="title">
+            <h1>Our Premium Services</h1>
+          </div>
+          <div class="fourth_box">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="fourth_card"
+            >
+              <i class="fa-solid fa-arrow-rotate-right"></i>
+              <h3>24 Hours Support</h3>
+              <p>We support you all hours of the day,</p>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              class="fourth_card"
+            >
+              <i class="fa-solid fa-award"></i>
+              <h3>24 Hours Support</h3>
+              <p>We support you all hours of the day,</p>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="fourth_card"
+            >
+              <i class="fa-solid fa-location"></i>
+              <h3>24 Hours Support</h3>
+              <p>We support you all hours of the day,</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fifth">
+        <div class="container">
+          <div data-aos="fade-down" data-aos-duration="2000" class="title">
+            <h1>What Our Clients Say?</h1>
+          </div>
+
+          <div class="fifth_box">
+            <div
+              data-aos="zoom-in-right"
+              data-aos-duration="1000"
+              class="fifht_card"
+            >
+              <img src="./imgs/fife img1.png" alt="" />
+              <h3>Kristin Watson</h3>
+              <p>
+                I rented a car for a one-week trip from Carnet on the
+                recommendation of my friend. Actually, I am satisfied with them.
+              </p>
+            </div>
+            <div
+              data-aos="zoom-in-left"
+              data-aos-duration="1000"
+              class="fifht_card"
+            >
+              <img src="./imgs/five img2.png" alt="" />
+              <h3>Kristin Watson</h3>
+              <p>
+                I rented a car for a one-week trip from Carnet on the
+                recommendation of my friend. Actually, I am satisfied with them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sixth">
+        <div class="container">
+          <div data-aos="zoom-out-right" data-aos-duration="1000" class="card">
+            <h1>450+</h1>
+            <p>Cars For Rent</p>
+          </div>
+          <div data-aos="zoom-out-up" data-aos-duration="1000" class="card">
+            <h1>450+</h1>
+            <p>Cars For Rent</p>
+          </div>
+          <div data-aos="zoom-out-left" data-aos-duration="1000" class="card">
+            <h1>450+</h1>
+            <p>Cars For Rent</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <div class="contianer"></div>
+      <div class="container">
+        <h1>CARENT</h1>
+        <ul>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-telegram"></i></li>
+          <li><i class="fa-brands fa-whatsapp"></i></li>
+        </ul>
+      </div>
     </footer>
   </body>
+  <script src="main.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

@@ -1,1 +1,537 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #1A1B1C;
+  overflow-x: hidden;
+  position: relative;
+}
+body.darkmode {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+body.darkmode h1 {
+  color: black;
+}
+body.darkmode p {
+  color: black;
+}
+body.darkmode h3 {
+  color: black;
+}
+body.darkmode h4 {
+  color: black;
+}
+body.darkmode ul li {
+  color: black;
+}
+body.darkmode .card {
+  border: 2px solid black;
+}
+body.darkmode nav {
+  color: black;
+}
+body.darkmode nav .container {
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body.darkmode nav .container h1 {
+  animation: logo 3s linear infinite;
+  color: #FE8400;
+}
+@keyframes logo {
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 5px;
+    transform: translate(20px);
+  }
+  100% {
+    letter-spacing: 0px;
+    transform: translate(0px);
+  }
+}
+body.darkmode nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body.darkmode nav .container ul li {
+  position: relative;
+  cursor: pointer;
+}
+body.darkmode nav .container ul li::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+  background-color: #FE8400;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -5px;
+}
+body.darkmode nav .container ul li:hover::after {
+  width: 100%;
+}
+body.darkmode nav .container button {
+  padding: 10px 20px;
+  background-color: #FE8400;
+  color: white;
+  border: none;
+}
+body.darkmode .fourth {
+  background-color: black;
+}
+body.darkmode .fourth .container {
+  padding-top: 50px;
+}
+body.darkmode .fourth .container .title {
+  padding: 30px 0px;
+}
+body.darkmode .fourth .container .title h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+body.darkmode .fourth .container .fourth_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body.darkmode .fourth .container .fourth_box .fourth_card {
+  width: 277px;
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+body.darkmode .fourth .container .fourth_box .fourth_card i {
+  font-size: 50px;
+  color: #FE8400;
+  text-align: center;
+  padding: 30px 0px;
+}
+body.darkmode .fourth .container .fourth_box .fourth_card h3 {
+  padding: 20px 0px;
+  color: black;
+}
+body.darkmode .fourth .container .fourth_box .fourth_card p {
+  padding-bottom: 40px;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+nav .container {
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .container h1 {
+  animation: logo 3s linear infinite;
+  color: #FE8400;
+}
+@keyframes logo {
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 5px;
+    transform: translate(20px);
+  }
+  100% {
+    letter-spacing: 0px;
+    transform: translate(0px);
+  }
+}
+nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav .container ul li {
+  position: relative;
+  cursor: pointer;
+}
+nav .container ul li::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+  background-color: #FE8400;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -5px;
+}
+nav .container ul li:hover::after {
+  width: 100%;
+}
+nav .container button {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav .container button:hover {
+  transform: scale(1.1);
+}
+nav .container button:active {
+  transform: scale(0.9);
+}
+nav .container button {
+  background-color: #FE8400;
+  color: white;
+  border: none;
+}
+
+.hero {
+  color: white;
+}
+.hero .container {
+  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .container ul {
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #FE8400;
+}
+.hero .container .info {
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.349);
+  padding: 30px;
+  margin-left: 50px;
+  z-index: 1;
+}
+.hero .container .info h1 {
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.hero .container .info h3 {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 20px 0px;
+}
+.hero .container .info button {
+  padding: 10px 20px;
+  background-color: #FE8400;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hero .container .info button:hover {
+  transform: scale(1.1);
+}
+.hero .container .info button:active {
+  transform: scale(0.9);
+}
+.hero .container .info button {
+  margin-bottom: 30px;
+}
+.hero .container .hero_img {
+  width: 800px;
+  height: 500px;
+  z-index: -1;
+}
+.hero .container .hero_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -1;
+}
+
+.intro .container {
+  padding: 50px 0px;
+}
+.intro .container .title {
+  padding: 20px 0px;
+}
+.intro .container .title h1 {
+  text-align: center;
+  color: white;
+  position: relative;
+  text-decoration: underline;
+}
+.intro .container .intro_box {
+  display: flex;
+  align-items: start;
+  gap: 50px;
+  justify-content: center;
+}
+.intro .container .intro_box .intro_card1 {
+  width: 500px;
+}
+.intro .container .intro_box .intro_card1 img {
+  width: 100%;
+}
+.intro .container .intro_box .intro_card2 {
+  width: 400px;
+  color: white;
+  padding: 20px 30px;
+}
+.intro .container .intro_box .intro_card2 p {
+  padding: 20px 0px;
+  letter-spacing: 1px;
+}
+.intro .container .intro_box .intro_card2 h3 {
+  color: #FE8400;
+}
+
+.book_now {
+  padding: 50px 0px;
+}
+.book_now .container .title {
+  text-align: center;
+  padding: 30px 0px;
+}
+.book_now .container .title h1 {
+  color: white;
+  text-decoration: underline;
+}
+.book_now .container .book_box {
+  background-color: #FFE4C6;
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 30px;
+}
+.book_now .container .book_box .book_card {
+  width: 300px;
+  background-color: #1A1B1C;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+  border: 1px solid white;
+}
+.book_now .container .book_box button {
+  padding: 10px 20px;
+  background-color: #FE8400;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.book_now .container .book_box button:hover {
+  transform: scale(1.1);
+}
+.book_now .container .book_box button:active {
+  transform: scale(0.9);
+}
+
+.third .container {
+  padding: 50px 0px;
+}
+.third .container .title {
+  padding: 30px 0px;
+}
+.third .container .title h1 {
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}
+.third .container .third_box {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.third .container .third_box .third_card {
+  width: 350px;
+  padding: 20px;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+.third .container .third_box .third_card:hover {
+  transform: scale(1.1);
+}
+.third .container .third_box .third_card img {
+  width: 300px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 10px;
+  padding: 20px 0px;
+}
+.third .container .third_box .third_card h3 {
+  color: white;
+  padding: 10px;
+}
+.third .container .third_box .third_card ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  padding: 20px 0px;
+}
+.third .container .third_box .third_card ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.third .container .third_box .third_card .narx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.third .container .third_box .third_card .narx .narx_link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.third .container .third_box .third_card .narx button {
+  padding: 10px 20px;
+  background-color: #FE8400;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.third .container .third_box .third_card .narx button:hover {
+  transform: scale(1.1);
+}
+.third .container .third_box .third_card .narx button:active {
+  transform: scale(0.9);
+}
+
+.fourth {
+  background-color: white;
+}
+.fourth .container {
+  padding-top: 50px;
+}
+.fourth .container .title {
+  padding: 30px 0px;
+}
+.fourth .container .title h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+.fourth .container .fourth_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fourth .container .fourth_box .fourth_card {
+  width: 277px;
+  background-color: #1A1B1C;
+  padding: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+.fourth .container .fourth_box .fourth_card i {
+  font-size: 50px;
+  color: #FE8400;
+  text-align: center;
+  padding: 30px 0px;
+}
+.fourth .container .fourth_box .fourth_card h3 {
+  color: white;
+  padding: 20px 0px;
+}
+.fourth .container .fourth_box .fourth_card p {
+  color: white;
+  padding-bottom: 40px;
+}
+
+.fifth .container {
+  padding: 50px 0px;
+}
+.fifth .container .title {
+  padding: 50px 0px;
+}
+.fifth .container .title h1 {
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}
+.fifth .container .fifth_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.fifth .container .fifth_box .fifht_card {
+  width: 350px;
+  border: 2px solid white;
+  padding: 30px;
+  text-align: center;
+}
+.fifth .container .fifth_box .fifht_card img {
+  padding: 20px 0px;
+}
+.fifth .container .fifth_box .fifht_card p {
+  color: white;
+  padding: 20px 0px;
+}
+.fifth .container .fifth_box .fifht_card h3 {
+  color: white;
+}
+
+.sixth {
+  background-color: #FFE4C6;
+}
+.sixth .container {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sixth .container .card {
+  width: 300px;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background-color: white;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px;
+  color: #FE8400;
+}
+footer .container ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}/*# sourceMappingURL=main.css.map */
